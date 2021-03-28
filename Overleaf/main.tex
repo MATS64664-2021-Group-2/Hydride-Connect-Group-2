@@ -1,0 +1,131 @@
+%
+% LaTeX template for EEE MSc Dissertation
+% Available for all PGT & PGR students at the UoM
+% v2.0 released 03 August 2020
+% Authors:
+% Farshad Arvin & Alex Casson
+
+% Change log
+% v1.0 June 2020
+%    Beta testing only - never publicly released
+%    A few minor margin changes & Calibri Fonts
+%    First version: a simple template for MSC Dissertation
+%============================================
+
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+%================ Font
+% Calibri Font
+\setromanfont[
+BoldFont=CalibriBold.ttf,
+ItalicFont=CalibriItalic.ttf,
+BoldItalicFont=CalibriBoldItalic.ttf,
+]{Calibri.ttf}
+%=============== Margin
+\usepackage{geometry}
+\geometry{a4paper, left=22mm,  top=22mm, bottom=22mm, right=22mm}
+%===============
+\usepackage{setspace}
+\usepackage[document]{ragged2e} % left-alignment
+\hyphenpenalty=10000
+\tolerance=10000
+%--------------------------------
+\begin{document}
+\onehalfspacing
+%========= Title Page
+\thispagestyle{empty} 
+\begin{titlepage}
+    \includegraphics[width=0.25\textwidth]{uom_logo.pdf}
+    \begin{center}
+       \vspace*{4cm}
+       {\LARGE Research Software Engineering Practice}
+       \vspace{3cm}
+    \begin{large}   
+    
+         Group 2 \\
+         
+         \vspace{0.5cm}
+
+        {\bf Analysis of the connectivity of hydrides within the microstructure of Zr alloys} \\
+
+       \vspace{1.5cm}
+        
+        {\bf June 2021} \\
+                
+        
+       \vspace{4cm}
+       \textbf{First-Name Last-Name}\\
+       
+
+       \vfill
+
+       {\bf \large Advanced Metallic System CDT Program}\\
+    
+    \end{large}  
+   \end{center}
+\end{titlepage}
+%========= Abstract
+\newpage 
+\thispagestyle{plain} 
+\pagenumbering{roman}
+\section*{Abstract}
+     This LaTeX template was prepared for the UoM PGR Final Dissertation.
+%========== Table of Content
+\newpage
+\begin{singlespacing}
+\tableofcontents
+\end{singlespacing}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{2.0}
+
+%>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+% Main body of Thesis
+%========= Start of Thesis 
+\newpage 
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\onehalfspacing
+
+%========= Introduction
+\section{Introduction}
+\subsection{Aim \& Objectives}
+\subsection{Summary}
+
+
+
+
+%========= Literature Review
+\section{Literature Review}
+
+
+
+
+%========= Methodology
+\section{Methodology}
+
+
+
+
+%========= Results
+\section{Results \& Discussion}
+
+
+
+
+%========= Conclusion
+\section{Conclusion \& Future Work}
+
+
+
+%>>>>>>>>>>>>>>>>>>>>> End of Thesis 
+
+%-------- Bibliography
+%\newpage
+\singlespacing
+\bibliography{biblography}
+\bibliographystyle{IEEEtran}
+\end{document}
