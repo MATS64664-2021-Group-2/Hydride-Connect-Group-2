@@ -4,8 +4,6 @@
 # Import any necessary modules as required
 import cv2
 
-Test = cv2.imread('Chu10.JPG',0)
-
 # First the file data has to be imported from the initial processing
 def Otsu(ImgIn):
     
