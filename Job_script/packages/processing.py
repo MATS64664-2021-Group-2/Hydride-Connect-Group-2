@@ -30,6 +30,7 @@ def vertical_strips(SecNum,img):
             SecNum += 1
         else:
                 break
+    #between 15 and 20 hypothetically no value is ignored for image width outside of prime values - excessive computing will not occur.
 
     #introducing a tracker variable allows for simple passing of number of slices between chunks
     strips = 0
