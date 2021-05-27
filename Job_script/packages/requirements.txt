@@ -1,18 +1,62 @@
+appdirs==1.4.4
+appnope==0.1.2
+attrs @ file:///tmp/build/80754af9/attrs_1620827162558/work
+backcall==0.2.0
+black @ file:///home/conda/feedstock_root/build_artifacts/black-recipe_1621937503778/work
 certifi==2020.12.5
+click @ file:///tmp/build/80754af9/click_1621604852318/work
+coverage==5.5
 cycler==0.10.0
 decorator==4.4.2
+hypothesis @ file:///home/conda/feedstock_root/build_artifacts/hypothesis_1622044211305/work
 imageio==2.9.0
+importlib-metadata @ file:///Users/runner/miniforge3/conda-bld/importlib-metadata_1622064140215/work
+iniconfig @ file:///home/linux1/recipes/ci/iniconfig_1610983019677/work
+ipykernel==5.5.5
+ipython==7.23.1
+ipython-genutils==0.2.0
+jedi==0.18.0
+jsonschema==3.2.0
+jupyter-client==6.1.12
+jupyter-core==4.7.1
 kiwisolver==1.3.1
 matplotlib==3.4.2
+matplotlib-inline==0.1.2
+more-itertools @ file:///home/conda/feedstock_root/build_artifacts/more-itertools_1621606173336/work
+mypy-extensions @ file:///Users/runner/miniforge3/conda-bld/mypy_extensions_1610127199348/work
+nbformat==5.1.3
+nbval==0.9.6
 networkx==2.5.1
 numpy==1.20.3
 opencv-python==4.5.2.52
+packaging @ file:///tmp/build/80754af9/packaging_1611952188834/work
+parso==0.8.2
+pathspec @ file:///home/conda/feedstock_root/build_artifacts/pathspec_1605120834673/work
+pexpect==4.8.0
+pickleshare==0.7.5
 Pillow==8.2.0
-pyparsing==2.4.7
+pluggy @ file:///opt/concourse/worker/volumes/live/a2630e20-8422-46fc-7347-f73294368851/volume/pluggy_1615976601840/work
+prompt-toolkit==3.0.18
+ptyprocess==0.7.0
+py @ file:///tmp/build/80754af9/py_1607971587848/work
+Pygments==2.9.0
+pyparsing @ file:///home/linux1/recipes/ci/pyparsing_1610983426697/work
+pyrsistent==0.17.3
+pytest==6.2.4
 python-dateutil==2.8.1
 pythreshold==0.3.1
 PyWavelets==1.1.1
+pyzmq==22.0.3
+regex @ file:///opt/concourse/worker/volumes/live/13d4e916-518e-4e28-5d3c-f9c853fd471c/volume/regex_1617569700425/work
 scikit-image==0.18.1
 scipy==1.6.3
-six==1.16.0
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+sortedcontainers @ file:///home/conda/feedstock_root/build_artifacts/sortedcontainers_1621217038088/work
 tifffile==2021.4.8
+toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+tornado==6.1
+traitlets==5.0.5
+typed-ast @ file:///Users/runner/miniforge3/conda-bld/typed-ast_1618337821402/work
+typing-extensions @ file:///home/ktietz/src/ci_mi/typing_extensions_1612808209620/work
+wcwidth==0.2.5
+zipp @ file:///tmp/build/80754af9/zipp_1615904174917/work
