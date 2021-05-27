@@ -1,10 +1,33 @@
 #!/usr/bin/env python
 # coding: utf-8
 import pytest 
-import parameters 
-import numpy as np 
+
+# We import the packages we need
+
+from matplotlib import pyplot as plt
+import re
+from PIL import Image
+#import os, os.path
+from os import listdir
+import matplotlib.axes
+import matplotlib.image as mpimg
+import numpy as np
 import cv2
+import loading
 
-def test_HCC2():
-       assert parameters.HCC2(7) == 127
+#import package to be tested 
+import processing
 
+#pre processing
+
+mypath = './base_line_images'
+def_files = loading.sorted_aphanumeric(listdir(mypath))
+
+# The data of the image that is going to be analysed are storaged in the "img" variable
+img_1 = cv2.imread('./base_line_images/45Degrees.png',0)
+
+# And the original image is plotted here
+#imgplot = plt.imshow(img_1)
+
+def test_vertical_strips():
+       assert processing.vertical_strips(15,img_1) == 7
