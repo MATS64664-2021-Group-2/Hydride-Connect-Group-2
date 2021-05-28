@@ -1,3 +1,0 @@
-OpenCv: https://anaconda.org/conda-forge/opencv
-
-matplotlib: https://anaconda.org/conda-forge/matplotlib
