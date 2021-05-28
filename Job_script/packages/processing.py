@@ -3,6 +3,9 @@
 import numpy as np
 import cv2
 
+def add(x,y):
+    return x + y
+
 def vertical_strips(SecNum,img):
     """
     This function separate the image into vertical strips.
