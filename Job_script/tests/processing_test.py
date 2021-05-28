@@ -16,21 +16,21 @@ import cv2
 
 
 # import the package
-import packages
+#import packages
 
 # import the antigravity module
-from packages import loading
+from .packages import loading
 
 # import the antigravity module
-from packages import processing
+from .packages import processing
 
 #pre processing
 
-mypath = './base_line_images/'
+mypath = '/base_line_images/'
 def_files = loading.sorted_aphanumeric(listdir(mypath))
 
 # The data of the image that is going to be analysed are storaged in the "img" variable
-img_1 = cv2.imread('./base_line_images/45Degrees.png',0)
+img_1 = cv2.imread('/base_line_images/45Degrees.png',0)
 
 # And the original image is plotted here
 #imgplot = plt.imshow(img_1)
