@@ -19,10 +19,10 @@ import cv2
 #import packages
 
 # import the antigravity module
-from .packages import loading
+from ../packages import loading
 
 # import the antigravity module
-from .packages import processing
+from ../packages import processing
 
 #pre processing
 
