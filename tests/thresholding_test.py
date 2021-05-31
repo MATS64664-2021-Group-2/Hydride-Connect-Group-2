@@ -2,7 +2,7 @@
 # coding: utf-8
 
 import pytest
-import connectivity
+from hydride_package import connectivity
 
 def test_otsu():
     assert connectivity.otsu()
