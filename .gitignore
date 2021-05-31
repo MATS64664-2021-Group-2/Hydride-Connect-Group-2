@@ -1,2 +1,7 @@
-# ignore all files in any directory named build
-image_prep/
+# ignore all out put files for thresholding:
+
+**/image_prep
+
+
+#misc 
+*.pyc
