@@ -62,27 +62,28 @@ def icu(image_list, pure_image_list):
         
         assert np.sum(image_threshold_inverted == clean_image_skimage_combined)/(len(image)*len(image[0]))*100 <= 95, "OpenCV and skimage processing has a 95% similarity to the original thresholded image. Processing may be redundant."
         
-        func, plots = plt.subplots(1,5, figsize =(40,40)) #Define subplot area
-        
-        plots[4].imshow(pure_image_list[j], "gray") #Plot everything for comparison and verification
-        plots[3].imshow(clean_image_skimage_combined, "gray")
-        plots[2].imshow(clean_image_skimage, "gray") 
-        plots[1].imshow(clean_image_open, "gray")
-        plots[0].imshow(image_threshold_inverted, "gray") 
-        
-        plots[4].axis("off") #Remove axes for increased clarity
-        plots[3].axis("off") 
-        plots[2].axis("off")
-        plots[1].axis("off")
-        plots[0].axis("off")
-        
-        plots[4].set_title("Original image", fontsize = "50") #Add titles for each processed image
-        plots[3].set_title("OpenCV + skimage", fontsize = "50") 
-        plots[2].set_title("skimage", fontsize = "50") 
-        plots[1].set_title("OpenCV", fontsize = "50")
-        plots[0].set_title("Gauss", fontsize = "50")
-        
-        plt.show() #Plot the images one by one for verification
+        if j == 6: #The 7th image was chosen as an example.
+            func, plots = plt.subplots(1,5, figsize =(40,40)) #Define subplot area
+
+            plots[4].imshow(pure_image_list[j], "gray") #Plot everything for comparison and verification
+            plots[3].imshow(clean_image_skimage_combined, "gray")
+            plots[2].imshow(clean_image_skimage, "gray") 
+            plots[1].imshow(clean_image_open, "gray")
+            plots[0].imshow(image_threshold_inverted, "gray") 
+
+            plots[4].axis("off") #Remove axes for increased clarity
+            plots[3].axis("off") 
+            plots[2].axis("off")
+            plots[1].axis("off")
+            plots[0].axis("off")
+
+            plots[4].set_title("Original image", fontsize = "50") #Add titles for each processed image
+            plots[3].set_title("OpenCV + skimage", fontsize = "50") 
+            plots[2].set_title("skimage", fontsize = "50") 
+            plots[1].set_title("OpenCV", fontsize = "50")
+            plots[0].set_title("Gauss", fontsize = "50")
+
+            plt.show() #Plot the images one by one for verification
         
         j += 1
 
