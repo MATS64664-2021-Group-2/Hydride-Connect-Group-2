@@ -21,7 +21,7 @@ Hydrides are a major concern in Zr alloys due to their embrittling effect. Chara
 - **tests** -->  This folder has .py files with code for code testing
 
 - **Workflow** --> This folder has a Jupyter notebook and three subfolders described below:
-     - _Workflow_Group2_ --> demo notebook to help the user to use the code
+     - _Workflow_Group2.ipynb_ --> demo notebook to help the user to use the code
      - _packages_ --> subfolder with .py files with all the functions that are called from the demo notebook
      - _Micrographs_ --> subfolder in which there are images to be analysed
      - _ImageStates_ --> subfolder with images produced after running the code
