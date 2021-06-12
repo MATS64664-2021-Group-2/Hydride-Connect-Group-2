@@ -1,6 +1,13 @@
 # Readme file: Hydride_Connection
 
-## Aim of the project: Characterize hydride connectivity in Zr alloys.
+- [Aim of the project](#aim-of-the-project)
+- [Description of the project](#description-of-the-project)
+- [Folders in Hydride_Connection:](#folders-in-hydride-connection-)
+- [Prerequisites](#prerequisites)
+
+
+## Aim of the project: 
+Characterize hydride connectivity in Zr alloys.
 
 ### Description of the project:
 Hydrides are a major concern in Zr alloys due to their embrittling effect. Characterizing their connectivity would allow for the creation of tougher Zr alloys for nuclear applications. The project consists of loading up existing micrographs of Zr alloy microstructures, binarizing them using thresholding (otsu, k-means and adaptive Gauss thresholding) and devising a method to study their connectivity. The project is carried out using Python language and GitHub for sharing.
