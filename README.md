@@ -54,7 +54,7 @@ It is necessary to install the following Python packages to run the code correct
  ## Usage:
  
 1. Install the Python packages described in the prerequisites section of this README file.
-2. Clone the repo
+2. Clone the repository:
    ```sh
    git clone https://github.com/MATS64664-2021-Group-2/Hydride_Connection.git
    ```
