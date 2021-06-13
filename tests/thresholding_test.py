@@ -9,5 +9,5 @@ sys.path.append("./Workflow/packages")
 import Workflow.packages.connectivity
 
 def test_otsu():
-    assert connectivity.otsu()
+    assert Workflow.packages.connectivity.otsu()
 
