@@ -8,6 +8,8 @@ sys.path.append("./Workflow/packages")
 
 import Workflow.packages.connectivity
 
+strips_num = 15
+
 def test_otsu():
-    assert Workflow.packages.connectivity.otsu()
+    assert Workflow.packages.connectivity.otsu(strips_num)
 
