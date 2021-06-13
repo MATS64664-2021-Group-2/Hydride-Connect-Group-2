@@ -35,7 +35,7 @@ img_1 = cv2.imread('test_images/45Degrees.png',0)
 #imgplot = plt.imshow(img_1)
 
 def test_add():
-    assert processing.add(1,3)==4
+    assert Workflow.packages.processing.add(1,3)==4
     
 def test_vertical_strips():
-       assert processing.vertical_strips(15,img_1) == 7
+       assert Workflow.packages.processing.vertical_strips(15,img_1) == 7
