@@ -55,6 +55,8 @@ It is necessary to install the following Python packages to run the code correct
   ```sh
   pip install scikit-image
   ```
+  
+
 ## Usage:
  
 1. Install the Python packages described in the prerequisites section of this README file.
