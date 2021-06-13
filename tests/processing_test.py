@@ -17,7 +17,7 @@ import cv2
 
 
 # import the package modules 
-from hydride_package import loading,processing
+from packages import loading,processing
 
 
 # The data of the image that is going to be analysed are storaged in the "img" variable
