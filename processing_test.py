@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 import re
 from PIL import Image
 #import os, os.path
-#import sys
+import sys, os
 #from os import listdir
 import matplotlib.axes
 import matplotlib.image as mpimg
@@ -16,10 +16,11 @@ import numpy as np
 import cv2
 
 #absolute path to file
-#sys.path.append("Hydride-Connect-Group-2/Job_script/packages")
+sys.path.append("/Workflow/packages")
 
 # import the package modules 
-from hydride_package import loading,processing
+import Workflow.packages.loading
+import Workflow.packages.processing
 
 
 #pre processing
