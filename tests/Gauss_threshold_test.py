@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt #Needs the matplotlib module to be installe
 from skimage import morphology
 import numpy as np
 
-path = "./demo/Micrographs/"
+path = "./Workflow/Micrographs/"
 i = 1
 imagelist = []
 
