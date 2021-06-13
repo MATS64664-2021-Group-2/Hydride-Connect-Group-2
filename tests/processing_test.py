@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 import re
 from PIL import Image
 #import os, os.path
-import sys
+import sys, os
 #from os import listdir
 import matplotlib.axes
 import matplotlib.image as mpimg
@@ -18,7 +18,8 @@ import cv2
 sys.path.append("./WorkFlow/packages")
 
 # import the package modules 
-import loading,processing
+import Workflow.packages.loading
+import Workflow.packages.processing
 
 
 # The data of the image that is going to be analysed are storaged in the "img" variable
