@@ -5,6 +5,10 @@
 - [Folders](#folders)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
+- [Functions](#functions)
+-- [image_count](##image_count)
+-- [Gaussian_thresholding](##Gaussian_thresholding)
+-- [image_clean_up](##image_clean_up)
 
 
 ## Aim of the project: 
@@ -51,7 +55,7 @@ It is necessary to install the following Python packages to run the code correct
   ```sh
   pip install scikit-image
   ```
- ## Usage:
+## Usage:
  
 1. Install the Python packages described in the prerequisites section of this README file.
 2. Clone the repository:
@@ -64,5 +68,40 @@ It is necessary to install the following Python packages to run the code correct
 
 4. Run all the cells and see the result
 
+## Functions:
+
+The Gaussian thresholding consists of three functions:
+
+## image_count:
+
+Count the number of images within the specified folder.
+
+Input:
+path - folder path that will be counted.
+
+Output:
+len(images) - the number of files within the directory specified in "path". (Counts all images, so the folder must be empty of other files.)
+
+## Gaussian_thresholding:
+
+Thresholds images to binary for ease of processing.
+
+Input:
+path - directory path for images
+
+Outputs:
+imagelist - list of thresholded images (list of numpy arrays)
+pure_image_list - list of unthresholded images (for subsequent plotting and comparison of results)
+
+## image_clean_up:
+
+Cleans up the images to display connected hydrides and plots them side-by-side for comparison.
+
+Inputs:
+image_list - list of thresholded (binary images).
+pure_image_list - list of non-thresholded images (for the sake of comparison).
+
+Output:
+None - (visual representation is enough in this case, as the results could not be used for further analysis).
             
 
