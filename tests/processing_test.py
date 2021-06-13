@@ -17,7 +17,7 @@ import cv2
 
 
 # import the package modules 
-from packages import loading,processing
+import loading,processing
 
 
 # The data of the image that is going to be analysed are storaged in the "img" variable
