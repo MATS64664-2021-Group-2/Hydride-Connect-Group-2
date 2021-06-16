@@ -130,29 +130,27 @@ Input files were manually made with known outputs.
             Images manually sliced with known HCC values. 
            
         Method:
-            HCC value was calculated by looking at the ratio of hieght of hydrides at slice boundaries to length total hieght of micrograph
+            HCC value was calculated by looking at the ratio of height of hydrides at slice boundaries to length total height of micrograph
 
-## Test Function:
+#Test Functions:
 
-    processing_test.py
+##processing_test.py
     
     vertical_strips():
         Description: 
-            Vertical strips splits the image into sections which are then transformed in consequent proccesses.
+            Vertical strips splits the image into sections which are then transformed in consequent processes.
         Input: 
             Initial number of strips for loop and Test image
         Output:
-            Number which the length of image is divisble by
+            Number which the length of image is divisible by
             
        
-## Test Function:
-    thresholding_test.py
-    
-    
+## thresholding_test.py
+       
     otsu():
         Description:
             Checking the threshold when image is transformed to black and white form grey scale
         Input:
-            Grey scale image saved as indivual strips in test folder 
+            Grey scale image saved as individual strips in test folder 
         Output: 
             Numpy D-Array which can be compared to the final image
