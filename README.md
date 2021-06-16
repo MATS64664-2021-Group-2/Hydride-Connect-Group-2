@@ -114,4 +114,45 @@ Output:
 
 None - (visual representation is enough in this case, as the results could not be used for further analysis).
             
+##Testing:
 
+Tests were created to make sure the main functions were working properly.
+Input files were manually made with known outputs.
+
+## Test Function:
+
+    parameters_test.py 
+
+    HCC2():
+        Description:
+            HCC2 calculates the Hydride Continuity co-efficient values using the Otsu and Kmeans methods
+        Input: 
+            Images manually sliced with known HCC values. 
+           
+        Method:
+            HCC value was calculated by looking at the ratio of hieght of hydrides at slice boundaries to length total hieght of micrograph
+
+## Test Function:
+
+    processing_test.py
+    
+    vertical_strips():
+        Description: 
+            Vertical strips splits the image into sections which are then transformed in consequent proccesses.
+        Input: 
+            Initial number of strips for loop and Test image
+        Output:
+            Number which the length of image is divisble by
+            
+       
+## Test Function:
+    thresholding_test.py
+    
+    
+    otsu():
+        Description:
+            Checking the threshold when image is transformed to black and white form grey scale
+        Input:
+            Grey scale image saved as indivual strips in test folder 
+        Output: 
+            Numpy D-Array which can be compared to the final image
