@@ -132,9 +132,9 @@ Input files were manually made with known outputs.
         Method:
             HCC value was calculated by looking at the ratio of height of hydrides at slice boundaries to length total height of micrograph
 
-#Test Functions:
+# Test Functions:
 
-##processing_test.py
+## processing_test.py
     
     vertical_strips():
         Description: 
