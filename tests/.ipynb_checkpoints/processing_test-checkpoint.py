@@ -1,33 +1,25 @@
 #!/usr/bin/env python
 # coding: utf-8
+
+# This sections imports standard modules to us 
+import os
+import sys
 import pytest 
-
-# We import the packages we need
-
-from matplotlib import pyplot as plt
-import re
-from PIL import Image
-#import os, os.path
-#import sys
-#from os import listdir
-import matplotlib.axes
-import matplotlib.image as mpimg
-import numpy as np
 import cv2
 
 
-# import the package modules 
-from hydride_package import loading,processing
+# Making the test look in the right place 
 
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+
+#Importing package to be tested:
+from Workflow.packages import processing
 
 # The data of the image that is going to be analysed are storaged in the "img" variable
+
 img_1 = cv2.imread('test_images/45Degrees.png',0)
 
-# And the original image is plotted here
-#imgplot = plt.imshow(img_1)
-
-def test_add():
-    assert processing.add(1,3)==4
-    
 def test_vertical_strips():
        assert processing.vertical_strips(15,img_1) == 7

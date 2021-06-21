@@ -1,28 +1,25 @@
 #!/usr/bin/env python
 # coding: utf-8
+
+# This sections imports standard modules to us 
+import os
+import sys
 import pytest 
-
-# We import the packages we need
-
-import re
-from PIL import Image
-import numpy as np
 import cv2
 
 
-# import the package modules 
-from hydride_package import *
+# Making the test look in the right place 
 
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+
+#Importing package to be tested:
+from Workflow.packages import processing
 
 # The data of the image that is going to be analysed are storaged in the "img" variable
-img_1 = cv2.imread('test_images/45Degrees.png',0)
 
+img_1 = cv2.imread('test_images/45Degrees.png',0)
 
 def test_vertical_strips():
        assert processing.vertical_strips(15,img_1) == 7
-
-def test_blur():
-    #blur function takes strips created in the vertical_strips
-    #stitches them together 
-    #check for the final image has not gotten bigger 
-    #check the blurring is correct 

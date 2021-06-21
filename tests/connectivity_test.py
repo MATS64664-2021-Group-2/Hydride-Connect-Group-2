@@ -1,42 +1,47 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+#!/usr/bin/env python
+# coding: utf-8
+
 import pytest
 import cv2
+import os
+import glob
+import sys
+from PIL import Image
+from numpy import asarray
+
+
+# Making the test look in the right place 
+
+PACKAGE_PARENT = '..'
+SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+
 
 # import the package modules 
-from hydride_package import *
+from Workflow.packages import connectivity
+
+# copy from test image folder to Otsu strips         
+src = "test_images/Gradient.png"
+dst = "Workflow/ImageStates/ImagePrep/Blurs/"
+
+for pngfile in glob.iglob(os.path.join(src, "*.png")):
+    shutil.copy(pngfile, dst)
+
+strips = 7 
+
+image = Image.open('Workflow/ImageStates/ImagePrep/Blurs/0.png')
+
+data = asarray(image)
+
+#convert image into numpy array 
 
 
-#import images for testing 
-
-img_45deg = cv2.imread('test_images/45Degrees.png',0)
-
-img_0deg  = cv2.imread('test_images/Full_Horizontal.png',0)
-
-img_90deg  = cv2.imread('test_images/Full_Vertical.png',0)
-
-#Starting values
-SecNum = 15
-HydrideOtsu = 0
-HydrideKmeans = 0
-
-
-def test_HCC1():
-# calculation for HCC is length of each Hydride in the radial direction / total length of micrograph
-# radial direction is vertical direction?
-
-    #for each of the images above confirm the output value 
-strips=processing.vertical_strips(SecNum,img)
-
-cv2.imwrite('ImageStates/ImagePrep/BlurJoined.png', processing.blur(strips))
-
-cv2.imwrite('ImageStates/Thresholding/OtsuThresh.png', connectivity.otsu(strips))
-
-cv2.imwrite("ImageStates/Thresholding/KThresh.png", connectivity.kmeans(strips))
-
-cv2.imwrite("ImageStates/Edges/CannyOtsu.png", connectivity.edges(strips)[0])
-
-cv2.imwrite("ImageStates/Edges/CannyKmeans.png", connectivity.edges(strips)[1])
-       assert parameters.HCC1(HydrideOtsu, HydrideKmeans)== 1
+def test_otsu():
+    
+    answer = connectivity.otsu(strips)
+    
+    assert answer == data
 
