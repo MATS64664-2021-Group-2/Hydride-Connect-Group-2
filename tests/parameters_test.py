@@ -6,6 +6,7 @@ import cv2
 import shutil
 import os
 import glob
+import sys
 from pathlib import Path
 
 # Making the test look in the right place 
@@ -47,13 +48,6 @@ clean_kmean = "Workflow/ImageStates/Edges/Kmeans/"
     #else:
         #pass
     
-# copy from test image folder to Otsu strips         
-#src = "./test_images/hcc_strips/"
-#dst = "./Workflow/ImageStates/Edges/Otsu/"
-
-#for pngfile in glob.iglob(os.path.join(src, "*.png")):
-#    shutil.copy(pngfile, dst)
-
 src = "./test_images/hcc_strips/"
 dst = "./Workflow/ImageStates/Edges/Otsu/"
 
